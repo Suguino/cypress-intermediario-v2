@@ -4,7 +4,7 @@ describe('Create Project', () => {
   beforeEach(() => cy.api_deleteProjects()) //  Executando comando customizado de deletar todos os projetos, antes de executar os seguintes test cases.
   
   //  Test case que verifica criação de projeto, usando uma variável, inserindo nome e descrição com a lib faker.
-  it('successfully', () => {
+  it('Verify if is possible create a project with API', () => {
     const project = {
       name: `project-${faker.datatype.uuid()}`,
       description: faker.random.words(5)

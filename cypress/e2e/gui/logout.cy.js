@@ -5,7 +5,7 @@ describe('Logout', () => {
     })
     
     // Test Case que verifica a realização de logout.
-    it('successfully', () => {
+    it('Verify if is possible logout with a account', () => {
       cy.logout() //  Comando customizado de logout.
   
       cy.url().should('be.equal', `${Cypress.config('baseUrl')}/users/sign_in`) //  Validação do test case, onde a url deve ser igual ao baseUrl/user/sign_in.

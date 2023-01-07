@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker'
 describe('Create issue', () => {
   beforeEach(() => cy.api_deleteProjects())
 
-  it('successfully', () => {
+  it('Verify if is possible create a issue with API', () => {
     const issue = {
       title: `issue-${faker.datatype.uuid()}`,
       description: faker.random.words(3),

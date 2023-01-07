@@ -10,7 +10,7 @@ describe('Create Project', options, () => {
   })
 
   //  Test case que verifica a criação de um projeto, inserindo dados aleatórios, com a lib faker.
-  it('successfully', () => {
+  it('Verify if is possible create a project', () => {
     const project = {
       name: `project-${faker.datatype.uuid()}`,
       description: faker.random.words(5)

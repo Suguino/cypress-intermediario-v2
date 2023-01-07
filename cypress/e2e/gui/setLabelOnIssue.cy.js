@@ -27,7 +27,7 @@ describe('Set label on issue', options, () => {
       })
   })
 
-  it('successfully', () => {
+  it('Verify if is possible set a label correctly', () => {
     cy.gui_setLabelOnIssue(label)
 
     cy.get('.qa-labels-block').should('contain', label.name)

@@ -21,7 +21,7 @@ describe('Create Issue', options, () => {
   })
 
   //  Test case que verifica a criação de uma issue, dentro de um projeto.
-  it('successfully', () => {
+  it('Verify if is possible create a issue', () => {
     cy.gui_createIssue(issue)
 
     //  Validação do test case, onde os detalhes da issue deve ser igual ao título e descrição criadas com a lib faker.
